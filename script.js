@@ -13,8 +13,6 @@ form.addEventListener('submit', text => {
     }
 });
 
-
-
 function validateEmail(email) {
     let correctEmail = /\w+@[a-z].[a-z]/;
     return correctEmail.test(email);
