@@ -138,7 +138,7 @@ form.error input {
     border-color: var(--lightRed);
 }
 
-form.error .invalid { 
+form.error p { 
     display: block;
 }
 
