@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;600;700&display=swap');
+
+
+:root {
+    --blue:  hsl(223, 87%, 63%);
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin' sans-serif;
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+
+.ping-logo {
+    margin-top: 4rem;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h3 span {
+    font-weight: 200;
+    color: var(--gray);
+}
+
+.subscribe {
+
+    margin-top: 1rem;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 2rem;
+    
+}
+
+.input-button {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+input {
+    height: 40px;
+    width: 300px;
+    border-radius: 25px;
+    padding-left: 15px;
+    border-color: var(--blue);
+    border-width: 1px;
+
+}
+
+form p {
+    color: var(--lightRed);
+    font-size: 13px;
+    margin-left: 50px;
+    display: none;
+}
+
+
+form {
+    margin: auto;
+}
+
+
+::placeholder {
+    color: hsl(0, 0%, 87%);
+}
+
+
+button {
+
+    margin: auto;
+    margin-top: 1rem;
+    height: 40px;
+    width: 300px;
+    border-radius: 25px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px var(--paleBlue);
+
+}
+
+button:hover {
+background-color: var(--paleBlue);
+}
+
+.illustration {
+    display: block;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 330px;
+}
+
+footer {
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.logos {
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: 13px;
+    color: var(--gray);
+}
+
+.fb:hover , .twit:hover, .ig:hover {
+    background-color: var(--veryDarkBlue);
+}
+
+form.error input {
+    border-color: var(--lightRed);
+}
+
+form.error .invalid { 
+    display: block;
+}
+
+ 
+
+@media only screen and (min-width: 1024px) {
+    form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    input {
+        margin-top: 1rem;
+        margin-right: 15px;
+    }
+
+    button {
+        width: 140px;
+        margin-top: 1rem;
+    }
+   
+
+
+}
